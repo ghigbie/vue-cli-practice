@@ -1,12 +1,12 @@
 <template>
-    <div id="all-friends">
-        <h2>All Friends</h2>
+    <div id="online-friends">
+        <h2>Online Friends</h2>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'AllFriends',
+    name: 'OnlineFriends',
     data(){
         return {
             
