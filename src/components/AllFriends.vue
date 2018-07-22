@@ -3,7 +3,7 @@
         <h2>All Friends</h2>
         <div v-for="(friend, index) in friends"
              :key="index">
-            <span> {{ friend.name }} </span>
+            <span v-if="friend.online"> {{ friend.name }} </span>
         </div>
     </div>
 </template>
