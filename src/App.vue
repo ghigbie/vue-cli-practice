@@ -27,13 +27,11 @@ export default {
                 {name: 'Toad', online: true},
                 {name: 'Bowser', online: false}
       ]
-    }
-  },
-  props: {
-    friends
+    };
   }
 }
 </script>
 
-<style>
+<style scoped>
+
 </style>
