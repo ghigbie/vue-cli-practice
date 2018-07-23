@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Blogs />
     <Navbar />
     <AllFriends :friends="friends"
                 @delete="deleteFriend"/>
@@ -11,13 +12,15 @@
 import Navbar from './components/Navbar';
 import AllFriends from './components/AllFriends';
 import OnlineFriends from './components/OnlineFriends';
+import Blogs from './components/Blogs';
 
 export default {
   name: 'app',
   components: {
     Navbar,
     AllFriends,
-    OnlineFriends
+    OnlineFriends,
+    Blogs
   },
   data () {
     return {
