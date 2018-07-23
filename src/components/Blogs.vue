@@ -1,8 +1,8 @@
 <template>
     <div class="blogs">
         <h2>Blogs</h2>
-        <div v-for="(blog, index) in blogData"
-             :key="index">
+        <div v-for="post in posts"
+             :key="post.id">
             <span>{{ blog.title }}</span>
         </div>
     </div>
@@ -15,7 +15,7 @@ export default {
     name: 'Blogs',
     data() {
         return {
-            blogData: []
+            posts: []
         };
     },
     methods: {
@@ -24,9 +24,8 @@ export default {
     created(){
         axios.get('https://jsonplaceholder.typicode.com/posts/')
             .then(response => {
-                this.blogData = response.data;
-                console.log(response.data);
-            })
+                this.posts = response.data;
+            });
     }
 }
 </script>
