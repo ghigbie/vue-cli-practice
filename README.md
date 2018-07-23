@@ -1,4 +1,4 @@
-# myproject
+# VueJS cli practice
 
 > A Vue.js project to practice the vue cli tool.
 
