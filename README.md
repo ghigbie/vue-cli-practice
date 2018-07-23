@@ -1,6 +1,6 @@
 # myproject
 
-> A Vue.js project
+> A Vue.js project to practice the vue cli tool.
 
 ## Build Setup
 
