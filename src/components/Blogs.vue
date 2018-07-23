@@ -3,7 +3,8 @@
         <h2>Blogs</h2>
         <div v-for="post in posts"
              :key="post.id">
-            <span>{{ blog.title }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.body }}</p>
         </div>
     </div>
 </template>
