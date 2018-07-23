@@ -2,7 +2,7 @@
     <div class="blogs">
         <h2>Blogs</h2>
         <input type="text" v-model="searchTerm"/>
-        <div v-for="post in posts"
+        <div v-for="post in filteredPosts"
              :key="post.id">
             <h3>{{ post.title }}</h3>
             <p>{{ post.body | snippet }}</p>
@@ -32,7 +32,7 @@ export default {
     computed: {
         filteredPosts() {
            return  this.posts.filter(post => {
-               post.body === this.searchTerm;
+               return post.title.match(this.searchTerm);
            })
         }
     },
